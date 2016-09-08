@@ -1,0 +1,110 @@
+
+body {
+    margin: 30px;
+    text-align: center;
+    background-color: #ECEBE4;
+    color: #333;
+    font-weight: 100;
+    font-family: Roboto;
+}
+
+.nav-bar {
+    margin-bottom: 20px;
+}
+
+.nav-bar h1 {
+    font-size: 40px;
+    margin-bottom: 0px;
+    width: 100%;
+    text-align: center;
+}
+
+@media only screen and (min-width: 900px) {
+    .nav-bar h1 {
+        width: 50%;
+        display: inline-block;
+        text-align: left;
+    }
+
+    .nav-bar #button-container {
+        width: 50%;
+        display: inline-block;
+        float: right;
+        text-align: right;
+        margin-top: 30px;
+    }
+}
+
+
+#button-container {
+    margin-bottom: 15px;
+}
+
+button {
+    /*background-color: #64A6BD;*/
+    background-color: #439CBC;
+    color: #FAFAFF;
+    border: none;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 10px;
+    border-radius: 10%;
+}
+
+button:hover {
+    background-color: #90A8C3;
+    cursor: pointer;
+}
+
+button.selected {
+    background-color: #2F2F2F;
+}
+
+.story {
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    padding-right: 30px;
+    padding-left: 30px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.24),0 3px 1px -2px rgba(0,0,0,.3),0 1px 5px 0 rgba(0,0,0,.22);
+    background-color: #FAFAFF;
+    height: auto;
+    overflow: hidden;
+}
+
+.story:hover {
+    background-color: #EEF0F2;
+    cursor: pointer;
+}
+
+.story img {
+    display: inline-block;
+}
+
+/* Made images disappear on mobile since ran out of time */
+.story .story-image {
+    display: none;
+}
+
+@media only screen and (min-width: 600px) {
+    .story .story-image {
+        width: 100px;
+        height: 100px;
+        background-size: cover;
+        display: inline-block;
+        float: left;
+        margin-right: 20px;
+        margin-top: 18px;
+    }
+
+    .story p {
+        display: block;
+    }
+}
+
+article a {
+    text-decoration: none;
+    text-transform: none;
+    color: #333;
+}
